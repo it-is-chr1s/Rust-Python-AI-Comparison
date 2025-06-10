@@ -1,0 +1,19 @@
+[package]
+name = "Rust"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["gpu"]
+cpu = []
+gpu = []
+
+[dependencies]
+ndarray = { version = "0.16.0", features = ["blas"] }
+ndarray-rand = "0.15.0"
+blas-src = { version = "0.10.0", default-features = false, features = [
+    "openblas",
+] }
+openblas-src = { version = "0.10", features = ["cblas", "system"] }
+arrayfire = "3.7.0"
+rand = "0.8"
