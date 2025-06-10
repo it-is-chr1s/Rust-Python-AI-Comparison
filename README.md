@@ -1,1 +1,1 @@
-# Rust-Python-Comparison
+# Rust-Python-AI-Comparison
