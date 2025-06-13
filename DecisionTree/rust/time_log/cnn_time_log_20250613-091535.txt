@@ -1,0 +1,13 @@
+Loading the dataset needed 109.36260 ms
+Describe for whole dataset needed 155.69890 ms
+Drop missing values needed 20.52700 ms
+Get single column price needed 1.79680 ms
+Selecting features needed 1.76430 ms
+Describe for modified dataset needed 41.45850 ms
+Printing head needed 6.97550 ms
+Converting to Ndarray needed 10.89390 ms
+Converting to dataset needed 0.03190 ms
+Splitting in training and validation dataset needed 0.45080 ms
+Training needed 18193.49810 ms
+Prediction needed 2.27460 ms
+Calculating MAE needed 0.25950 ms

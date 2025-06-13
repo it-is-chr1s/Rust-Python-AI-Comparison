@@ -32,15 +32,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .collect::<Vec<usize>>();
     tm.took("Get single column price");
 
-    let features = df_clean.select(&[
-        "Rooms",
-        "Bathroom",
-        "Landsize",
-        "BuildingArea",
-        "YearBuilt",
-        "Lattitude",
-        "Longtitude",
-    ])?;
+    let features =
+        df_clean.select(&["Rooms", "Bathroom", "Landsize", "Lattitude", "Longtitude"])?;
     tm.took("Selecting features");
 
     println!("{}", features.describe(None)?);
