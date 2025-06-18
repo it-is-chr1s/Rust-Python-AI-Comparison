@@ -1,0 +1,15 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+burn = { version = "~0.17", features = ["train", "tch", "vision"] }
+burn-tch = "0.17"
+chrono = "0.4.41"
+image = "0.24.9"
+ndarray = "0.16.1"
+
+imageproc = "0.23"
+rusttype = "0.9"
+rand = "0.8"

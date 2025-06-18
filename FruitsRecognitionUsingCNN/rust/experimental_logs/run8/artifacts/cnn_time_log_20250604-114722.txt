@@ -1,0 +1,6 @@
+Loading the dataset needed 237.44870 ms
+Balancing the dataset needed 146.78256 ms
+Splitting test set into validation- and test set needed 3.05200 ms
+Data Preprocessing needed 675149.38901 ms
+Training CNN and Saving Model needed 1630776.58762 ms
+Prediction needed 25304.34722 ms

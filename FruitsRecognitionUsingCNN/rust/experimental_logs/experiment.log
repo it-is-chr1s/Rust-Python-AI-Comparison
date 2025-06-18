@@ -1,0 +1,41 @@
+2025-06-01T19:56:30.645131Z  WARN wgpu_hal::vulkan::instance: Unable to find extension: VK_EXT_physical_device_drm    
+2025-06-01T19:56:30.645531Z  WARN wgpu_hal::vulkan::instance: InstanceFlags::VALIDATION requested, but unable to find layer: VK_LAYER_KHRONOS_validation    
+2025-06-01T19:56:30.658961Z  WARN wgpu_hal::vulkan::instance: GENERAL [Loader Message (0x0)]
+	terminator_CreateInstance: Received return code -3 from call to vkCreateInstance in ICD /usr/lib/x86_64-linux-gnu/libvulkan_virtio.so. Skipping this driver.    
+2025-06-01T19:56:30.659007Z  WARN wgpu_hal::vulkan::instance: 	objects: (type: INSTANCE, hndl: 0x6538ce604290, name: ?)    
+2025-06-01T19:56:30.665554Z  INFO cubecl_wgpu::runtime: Using adapter AdapterInfo { name: "Quadro RTX 6000", vendor: 4318, device: 7728, device_type: DiscreteGpu, driver: "NVIDIA", driver_info: "535.183.01", backend: Vulkan }    
+2025-06-01T19:56:30.665607Z  WARN wgpu_core::instance: Feature MAPPABLE_PRIMARY_BUFFERS enabled on a discrete gpu. This is a massive performance footgun and likely not what you wanted    
+2025-06-01T19:56:30.871708Z  INFO cubecl_wgpu::runtime: Created wgpu compute server on device Device { inner: Core(CoreDevice { context: ContextWgpuCore { type: "Native" }, id: Id(0,1), error_sink: Mutex { data: ErrorSink }, features: Features { features_wgpu: FeaturesWGPU(SHADER_FLOAT32_ATOMIC | TEXTURE_FORMAT_16BIT_NORM | TEXTURE_ADAPTER_SPECIFIC_FORMAT_FEATURES | PIPELINE_STATISTICS_QUERY | TIMESTAMP_QUERY_INSIDE_ENCODERS | TIMESTAMP_QUERY_INSIDE_PASSES | MAPPABLE_PRIMARY_BUFFERS | TEXTURE_BINDING_ARRAY | BUFFER_BINDING_ARRAY | STORAGE_RESOURCE_BINDING_ARRAY | SAMPLED_TEXTURE_AND_STORAGE_BUFFER_ARRAY_NON_UNIFORM_INDEXING | STORAGE_TEXTURE_ARRAY_NON_UNIFORM_INDEXING | PARTIALLY_BOUND_BINDING_ARRAY | MULTI_DRAW_INDIRECT | MULTI_DRAW_INDIRECT_COUNT | PUSH_CONSTANTS | ADDRESS_MODE_CLAMP_TO_ZERO | ADDRESS_MODE_CLAMP_TO_BORDER | POLYGON_MODE_LINE | POLYGON_MODE_POINT | CONSERVATIVE_RASTERIZATION | VERTEX_WRITABLE_STORAGE | CLEAR_TEXTURE | SPIRV_SHADER_PASSTHROUGH | MULTIVIEW | TEXTURE_ATOMIC | TEXTURE_FORMAT_NV12 | EXPERIMENTAL_RAY_TRACING_ACCELERATION_STRUCTURE | EXPERIMENTAL_RAY_QUERY | SHADER_F64 | SHADER_I16 | SHADER_PRIMITIVE_INDEX | SHADER_INT64 | SUBGROUP | SUBGROUP_VERTEX | SUBGROUP_BARRIER | PIPELINE_CACHE | SHADER_INT64_ATOMIC_MIN_MAX | SHADER_INT64_ATOMIC_ALL_OPS | TEXTURE_INT64_ATOMIC | EXPERIMENTAL_MESH_SHADER | EXPERIMENTAL_MESH_SHADER_MULTIVIEW), features_webgpu: FeaturesWebGPU(DEPTH_CLIP_CONTROL | DEPTH32FLOAT_STENCIL8 | TEXTURE_COMPRESSION_BC | TEXTURE_COMPRESSION_BC_SLICED_3D | TIMESTAMP_QUERY | INDIRECT_FIRST_INSTANCE | RG11B10UFLOAT_RENDERABLE | BGRA8UNORM_STORAGE | FLOAT32_FILTERABLE | DUAL_SOURCE_BLENDING) } }) } => AdapterInfo { name: "Quadro RTX 6000", vendor: 4318, device: 7728, device_type: DiscreteGpu, driver: "NVIDIA", driver_info: "535.183.01", backend: Vulkan }    
+2025-06-01T19:56:30.394195Z  INFO burn_train::learner::train_val: Fitting the model:
+ Model {
+  conv1: Conv2d {stride: [1, 1], kernel_size: [2, 2], dilation: [1, 1], groups: 1, padding: Valid, params: 208}
+  conv2: Conv2d {stride: [1, 1], kernel_size: [2, 2], dilation: [1, 1], groups: 1, padding: Valid, params: 2080}
+  conv3: Conv2d {stride: [1, 1], kernel_size: [2, 2], dilation: [1, 1], groups: 1, padding: Valid, params: 8256}
+  conv4: Conv2d {stride: [1, 1], kernel_size: [2, 2], dilation: [1, 1], groups: 1, padding: Valid, params: 32896}
+  linear1: Linear {d_input: 3200, d_output: 150, bias: true, params: 480150}
+  linear2: Linear {d_input: 150, d_output: 196, bias: true, params: 29596}
+  dropout1: Dropout {prob: 0.3}
+  dropout2: Dropout {prob: 0.4}
+  activation_relu: Relu
+  pool: MaxPool2d {kernel_size: [2, 2], stride: [2, 2], padding: Valid, dilation: [1, 1]}
+  params: 553186
+}    
+2025-06-01T19:56:30.905160Z  INFO burn_train::learner::epoch: Executing training step for epoch 1    
+2025-06-01T19:56:31.017334Z  INFO burn_train::learner::epoch: Iteration 1    
+2025-06-01T19:56:31.021683Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.021800Z  INFO cubecl_runtime::tune::tune_cache: Loaded 10 autotune cached entries    
+2025-06-01T19:56:31.119513Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.119694Z  INFO cubecl_runtime::tune::tune_cache: Loaded 31 autotune cached entries    
+2025-06-01T19:56:31.326140Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.326253Z  INFO cubecl_runtime::tune::tune_cache: Loaded 3 autotune cached entries    
+2025-06-01T19:56:31.421697Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.421796Z  INFO cubecl_runtime::tune::tune_cache: Loaded 6 autotune cached entries    
+2025-06-01T19:56:31.430490Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.430583Z  INFO cubecl_runtime::tune::tune_cache: Loaded 6 autotune cached entries    
+2025-06-01T19:56:31.484325Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.484411Z  INFO cubecl_runtime::tune::tune_cache: Loaded 1 autotune cached entries    
+2025-06-01T19:56:31.869392Z  INFO cubecl_runtime::tune::tune_cache: Load autotune cache ...    
+2025-06-01T19:56:31.869513Z  INFO cubecl_runtime::tune::tune_cache: Loaded 4 autotune cached entries    
+2025-06-01T19:56:32.114680Z  INFO cubecl_runtime::tune::tuner: Tuning Conv2dAutotuneKey { kernel_size: [99, 99], stride: [1, 1], padding: [0, 0], dilation: [1, 1], groups: 1, in_channels: 32, out_channels: 16, height: 128, width: 128, batch_size: 4, has_bias: false, dtype: F32 }    
+2025-06-01T19:56:33.568853Z ERROR burn_train::learner::application_logger: PANIC => panicked at /home/student/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cubecl-runtime-0.5.0/src/memory_management/memory_manage.rs:307:32:
+No pool handles allocation of size 4516300800    

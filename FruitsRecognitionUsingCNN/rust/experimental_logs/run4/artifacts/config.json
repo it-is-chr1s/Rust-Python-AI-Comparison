@@ -1,0 +1,18 @@
+{
+  "model": {
+    "num_classes": 196
+  },
+  "optimizer": {
+    "weight_decay": null,
+    "grad_clipping": null,
+    "alpha": 0.99,
+    "momentum": 0.9,
+    "epsilon": 0.00001,
+    "centered": false
+  },
+  "seed": 42,
+  "batch_size": 32,
+  "num_workers": 1,
+  "num_epochs": 30,
+  "learning_rate": 0.001
+}
